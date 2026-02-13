@@ -3,7 +3,7 @@ import { Sidebar, SidebarContent } from "$/ui/components/sidebar.component";
 import { LeftPanel } from "$/views/left-panel/index.view";
 import { RightPanel } from "$/views/right-panel/index.view";
 
-import data from "$/data/example_resume_3.json";
+import data from "$/data/example_resume_2.json";
 import { schema } from "$/data/schema";
 
 export function App() {
