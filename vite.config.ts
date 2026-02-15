@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import htmlMutatorPlugin from "./plugins/html-mutator.plugin";
 
 export default defineConfig({
   resolve: {
@@ -14,4 +15,5 @@ export default defineConfig({
   server: {
     port: 3001,
   },
+  plugins: [htmlMutatorPlugin],
 });
