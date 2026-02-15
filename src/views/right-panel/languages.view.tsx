@@ -8,7 +8,7 @@ export function Languages({ label, items }: LanguagesProps) {
       <h2 class="font-bold">{label}</h2>
       <ul class={"flex flex-col gap-y-1"}>
         {items.map((item) => (
-          <li>{item}</li>
+          <li>{item.label} {item.proficiency && `(${item.proficiency})`}</li>
         ))}
       </ul>
     </section>

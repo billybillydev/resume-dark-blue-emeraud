@@ -16,10 +16,25 @@ body {
   }
 }
 
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+    min-height: 297mm;
+  }
+}
+
 .print-color {
   @media print {
     print-color-adjust: exact;
   }
+}
+
+@page {
+  size: A4 portrait; /* or landscape */
+  margin: 0;
 }
 
 @layer base {

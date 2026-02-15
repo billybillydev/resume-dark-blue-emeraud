@@ -7,9 +7,7 @@ import {
 import { Badge } from "$/ui/components/badge.component";
 import { Icon } from "$/ui/components/icon.component";
 
-export type ExperienceProps = {
-  items: ResumeSchema["experiences"];
-};
+export type ExperienceProps = ResumeSchema["experiences"];
 
 function dateFormat(date: Date) {
   return Intl.DateTimeFormat("fr-FR", {
@@ -24,10 +22,10 @@ function capitalize(value: string) {
   return value[0].toUpperCase().concat(value.slice(1));
 }
 
-export function Experiences({ items }: ExperienceProps) {
+export function Experiences({ items, label }: ExperienceProps) {
   return (
     <section class={"flex flex-col gap-y-4"}>
-      <h2 class="font-bold text-3xl">Expériences professionnelles</h2>
+      <h2 class="font-bold text-3xl">{label}</h2>
       <ul class={"space-y-4 print:space-y-6"}>
         {items.map(
           ({
@@ -59,8 +57,8 @@ export function Experiences({ items }: ExperienceProps) {
               location,
               periodStart,
               periodEnd,
-              objective: objective,
-              achievement: achievement,
+              objective,
+              achievement,
               stack,
               context,
             };

@@ -2,7 +2,7 @@
   "name": "Julien MARTIN",
   "contact": {
     "phone": "+33698765432",
-    "email": "julien.martin.supply@example.com",
+    "email": "julien.martin@proton.com",
     "location": "Lyon (Auvergne-Rhône-Alpes)"
   },
   "socials": {
@@ -11,7 +11,13 @@
       "url": "https://www.linkedin.com/in/julien-martin-supply"
     }
   },
-  "languages": { "label": "Langues", "items": ["Français", "Anglais"] },
+  "languages": {
+    "label": "Langues",
+    "items": [
+      { "label": "Français", "proficiency": "C2" },
+      { "label": "Anglais", "proficiency": "B2" }
+    ]
+  },
   "softSkills": {
     "label": "Aptitudes",
     "items": [
@@ -26,108 +32,123 @@
   "title": "Responsable Logistique Industrielle",
   "positioning": "Logistique industrielle, entrepôts, transport, amélioration continue, sécurité & qualité",
   "summary": "Responsable Logistique Industrielle avec 11 ans d'expérience en environnement usine et multi-sites. Spécialisé dans l'optimisation des flux physiques, la performance entrepôt (réception, stockage, préparation, expédition), la maîtrise des coûts transport et la qualité/sécurité. Forte culture terrain, Lean, et pilotage par données (OTIF, productivité, taux d'erreur, lead time).",
-  "skills": [
-    {
-      "label": "Logistique Industrielle",
-      "items": [
-        "Gestion d'entrepôt (WMS, layout, slotting)",
-        "Flux usine (matières premières, encours, produits finis)",
-        "Transport (amont/aval) & affrètement",
-        "Gestion des inventaires & fiabilité stock"
-      ]
-    },
-    {
-      "label": "Amélioration Continue",
-      "items": [
-        "Lean Management (5S, Kaizen, VSM)",
-        "Standard work & management visuel",
-        "Optimisation des tournées / pick paths",
-        "Plan de productivité"
-      ]
-    },
-    {
-      "label": "Qualité & Sécurité",
-      "items": [
-        "Sécurité (EHS) et réduction des incidents",
-        "Qualité logistique (taux d'erreur, litiges)",
-        "Audits et plans d'action"
-      ]
-    },
-    {
-      "label": "Outils & Systèmes",
-      "items": ["WMS (concepts)", "ERP (SAP)", "Excel avancé", "Power BI"]
-    }
-  ],
-  "education": [
-    {
-      "degree": "Master Supply Chain & Logistique",
-      "institution": "KEDGE Business School",
-      "year": 2015
-    }
-  ],
-  "experiences": [
-    {
-      "title": "Responsable Logistique Industrielle",
-      "company": "Industrie Manufacturière (confidentiel)",
-      "location": "Saint-Étienne, France",
-      "context": "Pilotage entrepôt et expéditions, optimisation des flux usine et de la performance opérationnelle.",
-      "objectives": {
-        "label": "Objectifs",
+  "skills": {
+    "label": "Compétences",
+    "items": [
+      {
+        "label": "Logistique Industrielle",
         "items": [
-          "Organisation entrepôt (réception, stockage, préparation, expédition) et gestion des priorités",
-          "Pilotage transport et relation prestataires (SLA, coûts, qualité)",
-          "Mise en place d'un plan Lean (5S, standards, routines terrain)"
+          "Gestion d'entrepôt (WMS, layout, slotting)",
+          "Flux usine (matières premières, encours, produits finis)",
+          "Transport (amont/aval) & affrètement",
+          "Gestion des inventaires & fiabilité stock"
         ]
       },
-      "achievements": {
-        "label": "Impacts",
+      {
+        "label": "Amélioration Continue",
         "items": [
-          "Amélioration de l'OTIF et réduction des erreurs de préparation",
-          "Réduction des coûts transport via optimisation des chargements et modes",
-          "Diminution des temps de traversée (lead time) grâce à la simplification des flux"
+          "Lean Management (5S, Kaizen, VSM)",
+          "Standard work & management visuel",
+          "Optimisation des tournées / pick paths",
+          "Plan de productivité"
         ]
       },
-      "stacks": {
-        "label": "Environnement",
-        "items": []
+      {
+        "label": "Qualité & Sécurité",
+        "items": [
+          "Sécurité (EHS) et réduction des incidents",
+          "Qualité logistique (taux d'erreur, litiges)",
+          "Audits et plans d'action"
+        ]
       },
-      "duration": {
-        "start": {
-          "month": 2,
-          "year": 2022
+      {
+        "label": "Outils & Systèmes",
+        "items": ["WMS (concepts)", "ERP (SAP)", "Excel avancé", "Power BI"]
+      }
+    ]
+  },
+  "education": {
+    "label": "Diplômes et Formations",
+    "items": [
+      {
+        "degree": "Master en Logistique Industrielle",
+        "institution": "Université de Lyon",
+        "year": 2012
+      },
+      {
+        "degree": "Licence en Gestion des Opérations",
+        "institution": "Université de Lyon",
+        "year": 2010
+      }
+    ]
+  },
+  "experiences": {
+    "label": "Expériences Professionnelles",
+    "items": [
+      {
+        "title": "Responsable Logistique Industrielle",
+        "company": "Industrie Manufacturière (confidentiel)",
+        "location": "Saint-Étienne, France",
+        "context": "Pilotage entrepôt et expéditions, optimisation des flux usine et de la performance opérationnelle.",
+        "objective": {
+          "label": "Objectifs",
+          "items": [
+            "Organisation entrepôt (réception, stockage, préparation, expédition) et gestion des priorités",
+            "Pilotage transport et relation prestataires (SLA, coûts, qualité)",
+            "Mise en place d'un plan Lean (5S, standards, routines terrain)"
+          ]
         },
-        "end": {
-          "month": 12,
-          "year": 2025
+        "achievement": {
+          "label": "Impacts",
+          "items": [
+            "Amélioration de l'OTIF et réduction des erreurs de préparation",
+            "Réduction des coûts transport via optimisation des chargements et modes",
+            "Diminution des temps de traversée (lead time) grâce à la simplification des flux"
+          ]
+        },
+        "duration": {
+          "start": {
+            "month": 2,
+            "year": 2022
+          },
+          "end": {
+            "month": 12,
+            "year": 2025
+          }
+        }
+      },
+      {
+        "title": "Chef de Projet Logistique",
+        "company": "Prestataire Logistique (confidentiel)",
+        "location": "Lyon, France",
+        "context": "Déploiement d'améliorations process et outillage data sur un périmètre multi-clients.",
+        "objective": {
+          "label": "Objectifs",
+          "items": [
+            "Analyse des flux et identification des gisements de productivité",
+            "Refonte layout et optimisation pick paths / slotting",
+            "Création de KPI et rituels de pilotage"
+          ]
+        },
+        "achievement": {
+          "label": "Impacts",
+          "items": [
+            "Hausse de la productivité préparation et baisse des litiges",
+            "Mise en place de management visuel et routines quotidiennes",
+            "Stabilisation des process et montée en maturité des équipes"
+          ]
+        },
+        "duration": {
+          "start": {
+            "month": 6,
+            "year": 2019
+          },
+          "end": {
+            "month": 1,
+            "year": 2022
+          }
         }
       }
-    },
-    {
-      "title": "Chef de Projet Logistique",
-      "company": "Prestataire Logistique (confidentiel)",
-      "location": "Lyon, France",
-      "context": "Déploiement d'améliorations process et outillage data sur un périmètre multi-clients.",
-      "objectives": [
-        "Analyse des flux et identification des gisements de productivité",
-        "Refonte layout et optimisation pick paths / slotting",
-        "Création de KPI et rituels de pilotage"
-      ],
-      "achievements": [
-        "Hausse de la productivité préparation et baisse des litiges",
-        "Mise en place de management visuel et routines quotidiennes",
-        "Stabilisation des process et montée en maturité des équipes"
-      ],
-      "stacks": [],
-      "duration": {
-        "start": {
-          "month": 6,
-          "year": 2019
-        },
-        "end": {
-          "month": 1,
-          "year": 2022
-        }
-      }
-    }
-  ]
+    ]
+  }
 }

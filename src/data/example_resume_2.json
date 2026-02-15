@@ -18,70 +18,68 @@
     }
   },
   "summary": "Tech Lead Java avec plus de 10 ans d'expérience en développement backend et architecture (Spring Boot, microservices, APIs, event-driven). Habitué aux environnements à forte contrainte (performance, sécurité, disponibilité), je structure les pratiques (clean code, tests, CI/CD), pilote les choix d'architecture, et accompagne les équipes (mentoring, revues de code, rituels d'amélioration continue). Anglais professionnel.",
-  "skills": [
-    {
-      "label": "Backend Java",
-      "items": [
-        "Java 11/17",
-        "Spring Boot",
-        "Spring Cloud",
-        "Spring Security (OAuth2/JWT)",
-        "Hibernate/JPA",
-        "REST APIs",
-        "gRPC (bases)"
-      ]
-    },
-    {
-      "label": "Architecture & Distributed Systems",
-      "items": [
-        "Microservices",
-        "Event-driven (Kafka)",
-        "DDD (pratique)",
-        "Hexagonal/Clean Architecture",
-        "API Gateway / BFF (concepts)",
-        "Observability (logs, metrics, tracing)"
-      ]
-    },
-    {
-      "label": "Data",
-      "items": [
-        "PostgreSQL",
-        "MongoDB",
-        "Redis",
-        "Elasticsearch (bases)"
-      ]
-    },
-    {
-      "label": "Cloud & DevOps",
-      "items": [
-        "Docker",
-        "Kubernetes (bases)",
-        "CI/CD (GitLab CI, GitHub Actions)",
-        "AWS (EC2, ECS, RDS) (bases)"
-      ]
-    },
-    {
-      "label": "Quality Testing",
-      "items": [
-        "TDD",
-        "JUnit 5",
-        "Mockito",
-        "Testcontainers",
-        "Contract testing (bases)"
-      ]
-    },
-    {
-      "label": "Delivery Methods",
-      "items": [
-        "Agile / Scrum",
-        "Code review & standards",
-        "Mentoring",
-        "Architecture decision records (ADR)",
-        "JIRA",
-        "Confluence"
-      ]
-    }
-  ],
+  "skills": {
+    "label": "Compétences",
+    "items": [
+      {
+        "label": "Backend Java",
+        "items": [
+          "Java 11/17",
+          "Spring Boot",
+          "Spring Cloud",
+          "Spring Security (OAuth2/JWT)",
+          "Hibernate/JPA",
+          "REST APIs",
+          "gRPC (bases)"
+        ]
+      },
+      {
+        "label": "Architecture & Distributed Systems",
+        "items": [
+          "Microservices",
+          "Event-driven (Kafka)",
+          "DDD (pratique)",
+          "Hexagonal/Clean Architecture",
+          "API Gateway / BFF (concepts)",
+          "Observability (logs, metrics, tracing)"
+        ]
+      },
+      {
+        "label": "Data",
+        "items": ["PostgreSQL", "MongoDB", "Redis", "Elasticsearch (bases)"]
+      },
+      {
+        "label": "Cloud & DevOps",
+        "items": [
+          "Docker",
+          "Kubernetes (bases)",
+          "CI/CD (GitLab CI, GitHub Actions)",
+          "AWS (EC2, ECS, RDS) (bases)"
+        ]
+      },
+      {
+        "label": "Quality Testing",
+        "items": [
+          "TDD",
+          "JUnit 5",
+          "Mockito",
+          "Testcontainers",
+          "Contract testing (bases)"
+        ]
+      },
+      {
+        "label": "Delivery Methods",
+        "items": [
+          "Agile / Scrum",
+          "Code review & standards",
+          "Mentoring",
+          "Architecture decision records (ADR)",
+          "JIRA",
+          "Confluence"
+        ]
+      }
+    ]
+  },
   "softSkills": {
     "label": "Aptitudes",
     "items": [
@@ -96,227 +94,238 @@
   "languages": {
     "label": "Langues",
     "items": [
-      "Français",
-      "Anglais",
-      "Espagnole (bases)"
+      { "label": "Français" },
+      { "label": "Anglais" },
+      { "label": "Espagnole (bases)" }
     ]
   },
-  "education": [
-    {
-      "degree": "Diplôme d'Ingénieur Informatique",
-      "institution": "INSA Lyon",
-      "year": 2013
-    }
-  ],
-  "experiences": [
-    {
-      "title": "Tech Lead Java / Spring Boot",
-      "company": "Plateforme eCommerce",
-      "location": "Paris, France",
-      "context": "Pilotage technique d'une équipe backend sur une plateforme à fort trafic (microservices, APIs publiques, contraintes performance).",
-      "objective": {
-        "label": "Objectifs",
-        "items": [
-          "Fiabiliser et faire évoluer une architecture microservices",
-          "Améliorer la performance et la résilience (SLO, observabilité)",
-          "Faire monter l'équipe (standards, mentoring, revues de code)"
-        ]
+  "education": {
+    "label": "Diplômes et Formations",
+    "items": [
+      {
+        "degree": "Diplôme d'Ingénieur Informatique",
+        "institution": "INSA Lyon",
+        "year": 2013
       },
-      "achievement": {
-        "label": "Impacts",
-        "items": [
-          "Mise en place d'ADR et de standards de conception pour homogénéiser le code",
-          "Réduction des incidents via monitoring, tracing et durcissement des patterns de résilience",
-          "Amélioration du time-to-market grâce à une CI/CD plus stable et des tests automatisés"
-        ]
-      },
-      "duration": {
-        "start": {
-          "month": 2,
-          "year": 2023
-        }
-      },
-      "highlight": {
-        "label": "Tâches",
-        "items": [
-          "Conception d'APIs REST sécurisées (OAuth2/JWT) et versionnées",
-          "Mise en place de flux event-driven (Kafka) pour découplage des domaines",
-          "Animation de rituels techniques (guildes, design reviews, post-mortems)"
-        ]
-      },
-      "stack": {
-        "label": "Stack",
-        "items": [
-          "Java 17",
-          "Spring Boot",
-          "Spring Cloud",
-          "Kafka",
-          "PostgreSQL",
-          "Redis",
-          "Docker",
-          "GitLab CI",
-          "Kubernetes (bases)"
-        ]
+      {
+        "degree": "Certifications",
+        "institution": "Oracle Certified Professional, Java SE 11 Developer (2020)",
+        "year": 2020
       }
-    },
-    {
-      "title": "Lead Developer Java",
-      "company": "Banque / Finance",
-      "location": "La Défense, France",
-      "context": "Évolution d'un SI critique : modernisation progressive vers Spring Boot et sécurisation des échanges inter-applicatifs.",
-      "objective": {
-        "label": "Objectifs",
-        "items": [
-          "Moderniser le backend (monolithe → services) sans rupture",
-          "Renforcer la sécurité applicative et la traçabilité",
-          "Améliorer la qualité (tests, revues, debt control)"
-        ]
-      },
-      "achievement": {
-        "label": "Impacts",
-        "items": [
-          "Migration progressive vers Spring Boot avec découpage par domaines",
-          "Renforcement de la sécurité (Spring Security, JWT) et durcissement des endpoints",
-          "Amélioration de la couverture de tests et diminution des régressions en recette"
-        ]
-      },
-      "duration": {
-        "start": {
-          "month": 9,
-          "year": 2020
+    ]
+  },
+  "experiences": {
+    "label": "Expériences Professionnelles",
+    "items": [
+      {
+        "title": "Tech Lead Java / Spring Boot",
+        "company": "Plateforme eCommerce",
+        "location": "Paris, France",
+        "context": "Pilotage technique d'une équipe backend sur une plateforme à fort trafic (microservices, APIs publiques, contraintes performance).",
+        "objective": {
+          "label": "Objectifs",
+          "items": [
+            "Fiabiliser et faire évoluer une architecture microservices",
+            "Améliorer la performance et la résilience (SLO, observabilité)",
+            "Faire monter l'équipe (standards, mentoring, revues de code)"
+          ]
         },
-        "end": {
-          "month": 1,
-          "year": 2023
-        }
-      },
-      "highlight": {
-        "label": "Tâches",
-        "items": [
-          "Refactoring guidé par le domaine (DDD) et extraction de services",
-          "Mise en place de tests d'intégration avec Testcontainers",
-          "Coaching de développeurs (pairing, revues de PR, guidelines)"
-        ]
-      },
-      "stack": {
-        "label": "Stack",
-        "items": [
-          "Java 11",
-          "Spring Boot",
-          "Spring Security",
-          "Hibernate/JPA",
-          "PostgreSQL",
-          "Kafka (bases)",
-          "Docker",
-          "Jenkins",
-          "SonarQube"
-        ]
-      }
-    },
-    {
-      "title": "Développeur Senior Java / Spring",
-      "company": "SaaS B2B",
-      "location": "Lyon, France",
-      "context": "Développement de services backend pour une application B2B (scalabilité, intégrations partenaires, SLA).",
-      "objective": {
-        "label": "Objectifs",
-        "items": [
-          "Livrer de nouvelles fonctionnalités backend et APIs",
-          "Améliorer les performances et la stabilité",
-          "Industrialiser les tests et la CI"
-        ]
-      },
-      "achievement": {
-        "label": "Impacts",
-        "items": [
-          "Amélioration des temps de réponse via optimisation SQL et caching (Redis)",
-          "Mise en place de tests unitaires + intégration et meilleure confiance en release",
-          "Rationalisation des pipelines CI et réduction des échecs de build"
-        ]
-      },
-      "duration": {
-        "start": {
-          "month": 4,
-          "year": 2017
+        "achievement": {
+          "label": "Impacts",
+          "items": [
+            "Mise en place d'ADR et de standards de conception pour homogénéiser le code",
+            "Réduction des incidents via monitoring, tracing et durcissement des patterns de résilience",
+            "Amélioration du time-to-market grâce à une CI/CD plus stable et des tests automatisés"
+          ]
         },
-        "end": {
-          "month": 8,
-          "year": 2020
-        }
-      },
-      "highlight": {
-        "label": "Tâches",
-        "items": [
-          "Conception d'APIs REST et intégrations partenaires",
-          "Optimisation des requêtes (index, plans d'exécution) et caching",
-          "Mise en place de métriques applicatives et alerting"
-        ]
-      },
-      "stack": {
-        "label": "Stack",
-        "items": [
-          "Java 8/11",
-          "Spring",
-          "PostgreSQL",
-          "Redis",
-          "Docker",
-          "GitHub Actions",
-          "Sentry"
-        ]
-      }
-    },
-    {
-      "title": "Développeur Java",
-      "company": "ESN / Projet Industrie",
-      "location": "Nantes, France",
-      "context": "Maintenance et évolutions d'un applicatif métier, amélioration continue de la qualité et de l'outillage.",
-      "objective": {
-        "label": "Objectifs",
-        "items": [
-          "Développer et maintenir des fonctionnalités métier",
-          "Améliorer la robustesse via tests et bonnes pratiques",
-          "Participer aux cérémonies agiles et à la documentation"
-        ]
-      },
-      "achievement": {
-        "label": "Impacts",
-        "items": [
-          "Stabilisation de l'application grâce à des refactorings et tests unitaires",
-          "Amélioration du suivi qualité via SonarQube et revues de code",
-          "Documentation des procédures et accélération de l'onboarding"
-        ]
-      },
-      "duration": {
-        "start": {
-          "month": 9,
-          "year": 2014
+        "duration": {
+          "start": {
+            "month": 2,
+            "year": 2023
+          }
         },
-        "end": {
-          "month": 3,
-          "year": 2017
+        "highlight": {
+          "label": "Tâches",
+          "items": [
+            "Conception d'APIs REST sécurisées (OAuth2/JWT) et versionnées",
+            "Mise en place de flux event-driven (Kafka) pour découplage des domaines",
+            "Animation de rituels techniques (guildes, design reviews, post-mortems)"
+          ]
+        },
+        "stack": {
+          "label": "Stack",
+          "items": [
+            "Java 17",
+            "Spring Boot",
+            "Spring Cloud",
+            "Kafka",
+            "PostgreSQL",
+            "Redis",
+            "Docker",
+            "GitLab CI",
+            "Kubernetes (bases)"
+          ]
         }
       },
-      "highlight": {
-        "label": "Tâches",
-        "items": [
-          "Développement Java/Spring et correction d'incidents",
-          "Mise en place d'une base de tests JUnit/Mockito",
-          "Contribution à l'industrialisation (build, qualité, standards)"
-        ]
+      {
+        "title": "Lead Developer Java",
+        "company": "Banque / Finance",
+        "location": "La Défense, France",
+        "context": "Évolution d'un SI critique : modernisation progressive vers Spring Boot et sécurisation des échanges inter-applicatifs.",
+        "objective": {
+          "label": "Objectifs",
+          "items": [
+            "Moderniser le backend (monolithe → services) sans rupture",
+            "Renforcer la sécurité applicative et la traçabilité",
+            "Améliorer la qualité (tests, revues, debt control)"
+          ]
+        },
+        "achievement": {
+          "label": "Impacts",
+          "items": [
+            "Migration progressive vers Spring Boot avec découpage par domaines",
+            "Renforcement de la sécurité (Spring Security, JWT) et durcissement des endpoints",
+            "Amélioration de la couverture de tests et diminution des régressions en recette"
+          ]
+        },
+        "duration": {
+          "start": {
+            "month": 9,
+            "year": 2020
+          },
+          "end": {
+            "month": 1,
+            "year": 2023
+          }
+        },
+        "highlight": {
+          "label": "Tâches",
+          "items": [
+            "Refactoring guidé par le domaine (DDD) et extraction de services",
+            "Mise en place de tests d'intégration avec Testcontainers",
+            "Coaching de développeurs (pairing, revues de PR, guidelines)"
+          ]
+        },
+        "stack": {
+          "label": "Stack",
+          "items": [
+            "Java 11",
+            "Spring Boot",
+            "Spring Security",
+            "Hibernate/JPA",
+            "PostgreSQL",
+            "Kafka (bases)",
+            "Docker",
+            "Jenkins",
+            "SonarQube"
+          ]
+        }
       },
-      "stack": {
-        "label": "Stack",
-        "items": [
-          "Java 8",
-          "Spring",
-          "Hibernate",
-          "PostgreSQL",
-          "Maven",
-          "Git",
-          "SonarQube"
-        ]
+      {
+        "title": "Développeur Senior Java / Spring",
+        "company": "SaaS B2B",
+        "location": "Lyon, France",
+        "context": "Développement de services backend pour une application B2B (scalabilité, intégrations partenaires, SLA).",
+        "objective": {
+          "label": "Objectifs",
+          "items": [
+            "Livrer de nouvelles fonctionnalités backend et APIs",
+            "Améliorer les performances et la stabilité",
+            "Industrialiser les tests et la CI"
+          ]
+        },
+        "achievement": {
+          "label": "Impacts",
+          "items": [
+            "Amélioration des temps de réponse via optimisation SQL et caching (Redis)",
+            "Mise en place de tests unitaires + intégration et meilleure confiance en release",
+            "Rationalisation des pipelines CI et réduction des échecs de build"
+          ]
+        },
+        "duration": {
+          "start": {
+            "month": 4,
+            "year": 2017
+          },
+          "end": {
+            "month": 8,
+            "year": 2020
+          }
+        },
+        "highlight": {
+          "label": "Tâches",
+          "items": [
+            "Conception d'APIs REST et intégrations partenaires",
+            "Optimisation des requêtes (index, plans d'exécution) et caching",
+            "Mise en place de métriques applicatives et alerting"
+          ]
+        },
+        "stack": {
+          "label": "Stack",
+          "items": [
+            "Java 8/11",
+            "Spring",
+            "PostgreSQL",
+            "Redis",
+            "Docker",
+            "GitHub Actions",
+            "Sentry"
+          ]
+        }
+      },
+      {
+        "title": "Développeur Java",
+        "company": "ESN / Projet Industrie",
+        "location": "Nantes, France",
+        "context": "Maintenance et évolutions d'un applicatif métier, amélioration continue de la qualité et de l'outillage.",
+        "objective": {
+          "label": "Objectifs",
+          "items": [
+            "Développer et maintenir des fonctionnalités métier",
+            "Améliorer la robustesse via tests et bonnes pratiques",
+            "Participer aux cérémonies agiles et à la documentation"
+          ]
+        },
+        "achievement": {
+          "label": "Impacts",
+          "items": [
+            "Stabilisation de l'application grâce à des refactorings et tests unitaires",
+            "Amélioration du suivi qualité via SonarQube et revues de code",
+            "Documentation des procédures et accélération de l'onboarding"
+          ]
+        },
+        "duration": {
+          "start": {
+            "month": 9,
+            "year": 2014
+          },
+          "end": {
+            "month": 3,
+            "year": 2017
+          }
+        },
+        "highlight": {
+          "label": "Tâches",
+          "items": [
+            "Développement Java/Spring et correction d'incidents",
+            "Mise en place d'une base de tests JUnit/Mockito",
+            "Contribution à l'industrialisation (build, qualité, standards)"
+          ]
+        },
+        "stack": {
+          "label": "Stack",
+          "items": [
+            "Java 8",
+            "Spring",
+            "Hibernate",
+            "PostgreSQL",
+            "Maven",
+            "Git",
+            "SonarQube"
+          ]
+        }
       }
-    }
-  ],
+    ]
+  },
   "visibility": "Animation interne de sujets tech (qualité, architecture), mentoring et partage de bonnes pratiques au sein des équipes backend."
 }

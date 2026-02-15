@@ -28,8 +28,8 @@ export function App() {
   } = data;
 
   return (
-    <div class="min-h-screen grid grid-cols-1 md:grid-cols-3 print:grid-cols-3 w-full lg:w-3/4 xl:w-1/2 mx-auto">
-      <Sidebar class="col-span-2">
+    <div class="relative min-h-screen grid grid-cols-1 md:grid-cols-3 print:grid-cols-3 w-full lg:w-3/4 xl:w-1/2 mx-auto">
+      <Sidebar class="md:col-span-2">
         <LeftPanel
           name={name}
           title={title}
@@ -58,14 +58,14 @@ export function App() {
           />
         </SidebarContent>
       </Sidebar>
-      <section class="hidden md:block print:block col-span-1">
+      <aside class="hidden md:block print:block print:break-after-page print:h-full col-span-1">
         <RightPanel
           contact={contact}
           skills={skills}
           softSkills={softSkills}
           languages={languages}
         />
-      </section>
+      </aside>
     </div>
   );
 }

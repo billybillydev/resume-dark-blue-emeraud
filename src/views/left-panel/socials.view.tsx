@@ -3,7 +3,7 @@ import { ResumeSchema } from "$/data/schema";
 
 export type SocialProps = ResumeSchema["socials"];
 
-const socialIconsMap = new Map<string, IconName>([
+const socialIconsMap = new Map<keyof SocialProps, IconName>([
   ["website", "ri.global-fill"],
   ["youtube", "ri.youtube-fill"],
   ["github", "ri.github-line"],
@@ -16,10 +16,12 @@ const socialIconsMap = new Map<string, IconName>([
 
 export function Socials(props: SocialProps) {
   return (
-    <section class={"flex flex-wrap gap-y-2 gap-x-3"}>
+    <section
+      class={"flex flex-wrap justify-center md:justify-start gap-y-2 gap-x-4"}
+    >
       {Object.entries(props).map(([key, value]) => {
         return (
-          <p class="flex text-sm gap-x-2" title={value.label}>
+          <p class="flex text-sm gap-x-1" title={value.label}>
             <Icon
               name={socialIconsMap.get(key as keyof SocialProps) as IconName}
               size={5}

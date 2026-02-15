@@ -26,7 +26,7 @@ export default {
       colors: {
         base: {
           DEFAULT: colors.slate[500],
-          dark: colors.slate[800],
+          dark: colors.slate[900],
           light: colors.slate[300],
         },
         background: "hsla(var(--background))",
