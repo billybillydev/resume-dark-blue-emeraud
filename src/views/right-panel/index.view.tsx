@@ -22,7 +22,7 @@ export function RightPanel({
   return (
     <div
       class={
-        "md:h-full print:h-full print-color bg-success-dark print:bg-success-dark text-white px-4 md:px-8 py-8 md:py-16 flex flex-col gap-y-8"
+        "md:h-full print:h-full print-color bg-success-dark text-white px-4 md:px-8 py-8 md:py-16 flex flex-col gap-y-8"
       }
     >
       <Contact {...contact} />
