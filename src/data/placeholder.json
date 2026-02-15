@@ -1,0 +1,23 @@
+{
+  "experiences": {
+    "label": "Expériences Professionnelles"
+  },
+  "education": {
+    "label": "Diplômes et Formations"
+  },
+  "languages": {
+    "label": "Langues"
+  },
+  "skills": {
+    "label": "Compétences"
+  },
+  "softSkills": {
+    "label": "Aptitudes"
+  },
+  "duration": {
+    "from": "De",
+    "to": "à"
+  },
+  "printButton": { "label": "cliquer pour imprimer ou appuyer sur p" },
+  "sideBarTrigger": { "label": "Contact & Compétences" }
+}

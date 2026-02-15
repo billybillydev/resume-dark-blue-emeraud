@@ -5,14 +5,7 @@ const blockSchema = z.object({
   items: z.array(z.string()),
 });
 
-function blockSchemaGeneric<T>(schema: z.ZodType<T>) {
-  return z.object({
-    label: z.string(),
-    items: z.array(schema),
-  });
-}
-
-const experienceItemSchema = z.object({
+const experiencesSchema = z.object({
   title: z.string(),
   company: z.string(),
   location: z.string(),
@@ -27,18 +20,18 @@ const experienceItemSchema = z.object({
   }),
 });
 
-const educationItemSchema = z.object({
+const educationSchema = z.object({
   degree: z.string(),
   institution: z.string(),
   year: z.number(),
 });
 
-const languageItemSchema = z.object({
+const languageSchema = z.object({
   label: z.string(),
   proficiency: z.string().optional(),
 });
 
-export const schema = z.object({
+export const resumeSchema = z.object({
   name: z.string(),
   contact: z.object({
     phone: z.string(),
@@ -56,15 +49,15 @@ export const schema = z.object({
     website: z.object({ label: z.string(), url: z.string() }).optional(),
     x: z.object({ label: z.string(), url: z.string() }).optional(),
   }),
-  languages: blockSchemaGeneric(languageItemSchema),
-  softSkills: blockSchema,
+  languages: z.array(languageSchema),
+  softSkills: z.array(z.string()),
   title: z.string(),
   positioning: z.string(),
   summary: z.string(),
   visibility: z.string().optional(),
-  skills: blockSchemaGeneric(blockSchema),
-  education: blockSchemaGeneric(educationItemSchema),
-  experiences: blockSchemaGeneric(experienceItemSchema),
+  skills: z.array(blockSchema),
+  education: z.array(educationSchema),
+  experiences: z.array(experiencesSchema),
 });
 
-export type ResumeSchema = z.infer<typeof schema>;
+export type ResumeSchema = z.infer<typeof resumeSchema>;

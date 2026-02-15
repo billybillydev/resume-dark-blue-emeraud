@@ -1,4 +1,4 @@
-import { ResumeSchema } from "$/data/schema";
+import { ResumeSchema } from "$/schemas/resume.schema";
 import { Education, EducationProps } from "$/views/left-panel/education.view";
 import {
   ExperienceProps,

@@ -1,5 +1,5 @@
 import { Icon, IconName } from "$/ui/components/icon.component";
-import { ResumeSchema } from "$/data/schema";
+import { ResumeSchema } from "$/schemas/resume.schema";
 
 export type SocialProps = ResumeSchema["socials"];
 

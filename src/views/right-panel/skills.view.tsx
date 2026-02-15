@@ -1,6 +1,10 @@
-import { ResumeSchema } from "$/data/schema";
+import { PlaceholderSchema } from "$/schemas/placeholder.schema";
+import { ResumeSchema } from "$/schemas/resume.schema";
 
-export type SkillsProps = ResumeSchema["skills"];
+export type SkillsProps = {
+  items: ResumeSchema["skills"];
+  label: PlaceholderSchema["skills"]["label"];
+};
 
 export function Skills({ items, label }: SkillsProps) {
   return (

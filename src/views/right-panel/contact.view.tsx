@@ -1,4 +1,4 @@
-import { ResumeSchema } from "$/data/schema";
+import { ResumeSchema } from "$/schemas/resume.schema";
 import { Icon } from "$/ui/components/icon.component";
 
 export type ContactProps = ResumeSchema["contact"];

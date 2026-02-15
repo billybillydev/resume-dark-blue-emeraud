@@ -1,3 +1,5 @@
+import placeholder from "$/data/placeholder.json";
+
 export function PrintButton() {
   return (
     <div class="p-2 print:hidden flex items-center justify-center w-full">
@@ -6,7 +8,7 @@ export function PrintButton() {
         x-data="print"
         x-bind="trigger"
       >
-        cliquer pour imprimer ou appuyer sur p
+        {placeholder.printButton.label}
       </button>
     </div>
   );

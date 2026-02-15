@@ -1,6 +1,10 @@
-import { ResumeSchema } from "$/data/schema";
+import { PlaceholderSchema } from "$/schemas/placeholder.schema";
+import { ResumeSchema } from "$/schemas/resume.schema";
 
-export type EducationProps = ResumeSchema["education"];
+export type EducationProps = {
+  items: ResumeSchema["education"];
+  label: PlaceholderSchema["education"]["label"];
+};
 
 export function Education({ items, label }: EducationProps) {
   return (

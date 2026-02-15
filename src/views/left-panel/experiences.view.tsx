@@ -1,4 +1,5 @@
-import { ResumeSchema } from "$/data/schema";
+import { PlaceholderSchema } from "$/schemas/placeholder.schema";
+import { ResumeSchema } from "$/schemas/resume.schema";
 import {
   SoloAccordion,
   SoloAccordionContent,
@@ -7,7 +8,10 @@ import {
 import { Badge } from "$/ui/components/badge.component";
 import { Icon } from "$/ui/components/icon.component";
 
-export type ExperienceProps = ResumeSchema["experiences"];
+export type ExperienceProps = {
+  label: PlaceholderSchema["experiences"]["label"];
+  items: ResumeSchema["experiences"];
+}
 
 function dateFormat(date: Date) {
   return Intl.DateTimeFormat("fr-FR", {

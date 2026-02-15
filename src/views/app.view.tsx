@@ -3,12 +3,20 @@ import { Sidebar, SidebarContent } from "$/ui/components/sidebar.component";
 import { LeftPanel } from "$/views/left-panel/index.view";
 import { RightPanel } from "$/views/right-panel/index.view";
 
-import data from "$/data/example_resume_2.json";
-import { schema } from "$/data/schema";
+import data from "$/data/example_resume_1.json";
+import placeholder from "$/data/placeholder.json";
+
+import { resumeSchema } from "$/schemas/resume.schema";
+import { placeholderSchema } from "$/schemas/placeholder.schema";
 
 export function App() {
-  const parsedData = schema.safeParse(data);
+  const parsedPlaceholder = placeholderSchema.safeParse(placeholder);
+  if (!parsedPlaceholder.success) {
+    console.error(parsedPlaceholder.error);
+    return <p>Placeholder schema validation failed</p>;
+  }
 
+  const parsedData = resumeSchema.safeParse(data);
   if (!parsedData.success) {
     console.error(parsedData.error);
     return <p>Schema validation failed</p>;
@@ -35,15 +43,15 @@ export function App() {
           title={title}
           summary={summary}
           socials={socials}
-          experiences={experiences}
-          education={education}
+          experiences={{ label: placeholder.experiences.label, items: experiences}}
+          education={{ label: placeholder.education.label, items: education }}
           sidebarTrigger={
             <div class="px-2 flex justify-center md:hidden print:hidden">
               <button
                 x-bind="trigger"
                 class="bg-success-dark text-white px-4 py-2 rounded flex items-center gap-x-4"
               >
-                <span>Contact & Compétences</span>
+                <span>{placeholder.sideBarTrigger.label}</span>
                 <Icon name="ri.arrow-right-long-line" />
               </button>
             </div>
@@ -52,18 +60,18 @@ export function App() {
         <SidebarContent>
           <RightPanel
             contact={contact}
-            skills={skills}
-            softSkills={softSkills}
-            languages={languages}
+            skills={{ label: placeholder.skills.label, items: skills}}
+            softSkills={{ label: placeholder.softSkills.label, items: softSkills}}
+            languages={{ label: placeholder.languages.label, items: languages}}
           />
         </SidebarContent>
       </Sidebar>
       <aside class="hidden md:block print:block print:break-after-page print:h-full col-span-1">
         <RightPanel
           contact={contact}
-          skills={skills}
-          softSkills={softSkills}
-          languages={languages}
+          skills={{ label: placeholder.skills.label, items: skills}}
+          softSkills={{ label: placeholder.softSkills.label, items: softSkills}}
+          languages={{ label: placeholder.languages.label, items: languages}}
         />
       </aside>
     </div>

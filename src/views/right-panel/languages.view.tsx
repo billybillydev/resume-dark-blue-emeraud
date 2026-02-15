@@ -1,6 +1,10 @@
-import { ResumeSchema } from "$/data/schema";
+import { PlaceholderSchema } from "$/schemas/placeholder.schema";
+import { ResumeSchema } from "$/schemas/resume.schema";
 
-export type LanguagesProps = ResumeSchema["languages"];
+export type LanguagesProps = {
+  label: PlaceholderSchema["languages"]["label"];
+  items: ResumeSchema["languages"];
+}
 
 export function Languages({ label, items }: LanguagesProps) {
   return (
